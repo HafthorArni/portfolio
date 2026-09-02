@@ -9,7 +9,7 @@ It contains only:
     index.html       Text, project sections, image order and captions
     styles.css       Layout, colors, tile sizes and image cropping
     script.js        Fullscreen image viewer
-    projects/        All project images and the earthquake animation
+    projects/        All project images, GIFs and the earthquake animation
     favicon.svg      Browser icon
     local-server.py  Tiny no-cache local web server
     start-local.bat  Windows launcher
@@ -46,6 +46,9 @@ Change the filename after src= to replace the image. Put new image files in
 the projects folder. Move the entire button block to reorder a picture, or
 delete the block to remove it.
 
+GIF animations use the same <img> blocks as ordinary pictures. They animate
+automatically and open in the fullscreen viewer when clicked.
+
 Available tile classes are:
 
     gallery-card standard
@@ -60,6 +63,7 @@ Open styles.css.
 
 The main gallery layout is under .project-grid.
 Tile sizes are under .gallery-card, .wide, .tall and .feature.
+The desktop chapter width is controlled by max-width: 1100px.
 Image cropping is controlled by:
 
     .gallery-card img, .gallery-card video {
@@ -72,4 +76,3 @@ Image cropping is controlled by:
 HOSTING ONLINE
 
 Upload the contents of this folder to the root of any static web host.
-
