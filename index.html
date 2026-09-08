@@ -1,990 +1,409 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Hafþór Árni Hermannsson — Mechatronics Projects</title>
-    <meta
-      name="description"
-      content="A visual portfolio of mechatronics projects, prototypes, electronics, machines and experiments by Hafþór Árni Hermannsson."
-    >
+    <title>Hafþór Árni Hermannsson | Mechatronics Engineer</title>
+    <meta name="description" content="Selected mechatronics systems, field hardware, embedded electronics and self-directed builds by Hafþór Árni Hermannsson.">
+    <meta name="theme-color" content="#0b0d0d">
     <link rel="shortcut icon" href="favicon.svg">
     <link rel="icon" href="favicon.svg">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <main>
-      <header class="site-header">
-        <a class="wordmark" href="#top" aria-label="Back to top">
-          HÁH
-          <span class="wordmark-dot">.</span>
+    <a class="skip-link" href="#work">Skip to selected work</a>
+
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="wordmark" href="#top" aria-label="Hafþór Árni Hermannsson, back to top">
+          HÁH<span aria-hidden="true">.</span>
         </a>
         <nav aria-label="Main navigation">
-          <a href="#projects">Projects</a>
-          <a href="#about">About</a>
+          <a href="#work">Work</a>
+          <a href="#about">Profile</a>
+          <a href="mailto:arnihafthor@gmail.com">Contact</a>
         </nav>
-      </header>
-      <section class="hero" id="top">
-        <div class="hero-copy">
-          <p class="eyebrow">Mechatronics engineer · Reykjavík</p>
-          <h1>
-            I make
-            <br>
-            stuff.
-          </h1>
-          <p class="hero-note">
-            Usually with motors, PCBs, sensors,
-            <br>
-            or far too many wires.
-          </p>
-          <a class="scroll-link" href="#projects">
-            Explore the builds
-            <span>↓</span>
-          </a>
-        </div>
-        <div class="hero-collage" aria-label="A selection of projects">
-          <button class="hero-image hero-image-1" aria-label="Open Camera + laser unit">
-            <img
-              src="projects/optitog-event-camera-laser-unit-jpeg.webp"
-              alt="Optitog camera and laser unit on a workbench"
-              loading="eager"
-            >
-          </button>
-          <button class="hero-image hero-image-2" aria-label="Open Telescope configuration">
-            <img
-              src="projects/startracker-with-telescope-jpeg.webp"
-              alt="Motorized star tracker carrying a telescope"
-              loading="eager"
-            >
-          </button>
-          <button class="hero-image hero-image-3" aria-label="Open The full test rig">
-            <img
-              src="projects/overall-wave-simulator-jpg.webp"
-              alt="Full wave simulator test rig in a laboratory"
-              loading="eager"
-            >
-          </button>
-          <button class="hero-image hero-image-4" aria-label="Open Computer-vision theremin">
-            <img
-              src="projects/cv-theremin-jpg.webp"
-              alt="Computer vision hand tracking interface"
-              loading="eager"
-            >
-          </button>
-          <button class="hero-image hero-image-5" aria-label="Open Tesla coil">
-            <img
-              src="projects/tesla-coil-jpg.webp"
-              alt="Large homemade Tesla coil producing an arc"
-              loading="eager"
-            >
-          </button>
-          <p class="hero-stamp">
-            Built, tested,
-            <br>
-            taken apart,
-            <br>
-            built again.
-          </p>
-        </div>
-      </section>
-      <section class="intro-strip" aria-label="Portfolio introduction">
-        <p>
-          A visual archive of professional work, university projects and years of building at home.
-        </p>
-        <span>99</span>
-      </section>
-      <div id="projects">
-        <section class="project-section" id="optitog" style="--project-accent:#dfff4f">
-          <div class="project-heading">
-            <span class="project-number">01</span>
-            <div>
-              <h2>Optitog</h2>
-              <p>PCBs, imaging hardware, assembly and field work</p>
-            </div>
-            <span class="project-count">11</span>
-          </div>
-          <div class="project-grid">
-            <button class="gallery-card feature" aria-label="Open Camera + laser unit">
-              <img
-                src="projects/optitog-event-camera-laser-unit-jpeg.webp"
-                alt="Optitog camera and laser unit on a workbench"
-                loading="lazy"
-              >
-              <span class="image-index">01</span>
-              <span class="image-caption">Camera + laser unit</span>
-            </button>
-           <button class="gallery-card animated-card tall" aria-label="Open Optitog prototype laser test">
-              <img
-                src="projects/optitog-prototype.gif"
-                alt="Optitog prototype undergoing a green laser test"
-                loading="lazy"
-              >
-              <span class="image-index">01</span>
-              <span class="image-caption">Prototype laser test</span>
-            </button>
-            <button class="gallery-card wide" aria-label="Open Trawl equipment">
-              <img
-                src="projects/optitog-trawl-equipment-jpeg.webp"
-                alt="Optitog equipment lined up for deployment"
-                loading="lazy"
-              >
-              <span class="image-index">01</span>
-              <span class="image-caption">Trawl equipment</span>
-            </button>
-            <button class="gallery-card tall" aria-label="Open Custom PCB">
-              <img
-                src="projects/optitog-pcb-1-jpg.webp"
-                alt="Round custom Optitog PCB"
-                loading="lazy"
-              >
-              <span class="image-index">01</span>
-              <span class="image-caption">Custom PCB</span>
-            </button>
-            <button class="gallery-card wide" aria-label="Open Sensor interface board">
-              <img
-                src="projects/optitog-pcb-3-jpeg.webp"
-                alt="Long custom Optitog PCB held in one hand"
-                loading="lazy"
-              >
-              <span class="image-index">01</span>
-              <span class="image-caption">Sensor interface board</span>
-            </button>
-           <button class="gallery-card tall" aria-label="Open PCB revision">
-              <img
-                src="projects/optitog-pcb-2-jpeg.webp"
-                alt="Custom Optitog circuit board held in one hand"
-                loading="lazy"
-              >
-              <span class="image-index">01</span>
-              <span class="image-caption">PCB revision</span>
-            </button>
-            <button class="gallery-card animated-card feature" aria-label="Open live trawl monitoring">
-              <img
-                src="projects/optitog-trawl-equipment.gif"
-                alt="Optitog trawl equipment displaying live monitoring data"
-                loading="lazy"
-              >
-              <span class="image-index">01</span>
-              <span class="image-caption">Live trawl monitoring</span>
-            </button>
-            <button class="gallery-card tall" aria-label="Open Bench assembly">
-              <img
-                src="projects/optitog-event-camera-laser-unit-2-jpeg.webp"
-                alt="Optitog camera and laser unit during assembly"
-                loading="lazy"
-              >
-              <span class="image-index">01</span>
-              <span class="image-caption">Bench assembly</span>
-            </button>
-            <button class="gallery-card animated-card feature" aria-label="Open pop-up workshop tour">
-              <img
-                src="projects/optitog-pop-up-workshop.gif"
-                alt="Temporary Optitog workshop and field equipment"
-                loading="lazy"
-              >
-              <span class="image-index">01</span>
-              <span class="image-caption">Pop-up workshop, Norway</span>
-            </button>           
-          </div>
-        </section>
-        <section class="project-section" id="star-tracker" style="--project-accent:#76c7ff">
-          <div class="project-heading">
-            <span class="project-number">02</span>
-            <div>
-              <h2>Star Tracker</h2>
-              <p>CAD, electronics, mechanics and testing under the night sky</p>
-            </div>
-            <span class="project-count">14</span>
-          </div>
-          <div class="project-grid">
-            <button class="gallery-card feature" aria-label="Open Telescope configuration">
-              <img
-                src="projects/startracker-with-telescope-jpeg.webp"
-                alt="Motorized star tracker carrying a telescope"
-                loading="lazy"
-              >
-              <span class="image-index">02</span>
-              <span class="image-caption">Telescope configuration</span>
-            </button>
-             <button class="gallery-card animated-card tall" aria-label="Open star tracker motion test">
-              <img
-                src="projects/star-tracker.gif"
-                alt="Motorized star tracker moving during a bench test"
-                loading="lazy"
-              >
-              <span class="image-index">02</span>
-              <span class="image-caption">Tracker motion test</span>
-            </button>
-            <button class="gallery-card feature" aria-label="Open Mechanical design">
-              <img
-                src="projects/startracker-cad-png.webp"
-                alt="CAD model of the star tracker"
-                loading="lazy"
-              >
-              <span class="image-index">02</span>
-              <span class="image-caption">Mechanical design</span>
-            </button>
-            <button class="gallery-card standard" aria-label="Open Tilt mechanism">
-              <img
-                src="projects/star-tracker-tiltmagnet-jpg.webp"
-                alt="Star tracker tilt mechanism and magnetic sensor"
-                loading="lazy"
-              >
-              <span class="image-index">02</span>
-              <span class="image-caption">Tilt mechanism</span>
-            </button>
-            <button class="gallery-card tall" aria-label="Open Controls inside the base">
-              <img
-                src="projects/startracker-electronics1-jpg.webp"
-                alt="Controller electronics inside the star tracker base"
-                loading="lazy"
-              >
-              <span class="image-index">02</span>
-              <span class="image-caption">Controls inside the base</span>
-            </button>
-            <button class="gallery-card standard" aria-label="Open Controller board">
-              <img
-                src="projects/startracker-electronics3-jpg.webp"
-                alt="Hand-built star tracker controller board"
-                loading="lazy"
-              >
-              <span class="image-index">02</span>
-              <span class="image-caption">Controller board</span>
-            </button>
-            <button class="gallery-card standard" aria-label="Open Hand-wired underside">
-              <img
-                src="projects/startracker-electronics4-jpg.webp"
-                alt="Back of hand-built star tracker circuit board"
-                loading="lazy"
-              >
-              <span class="image-index">02</span>
-              <span class="image-caption">Hand-wired underside</span>
-            </button>
-             <button class="gallery-card feature" aria-label="Open Disassembled">
-              <img
-                src="projects/star-tracker-disasembled-jpg.webp"
-                alt="Star tracker disassembled to show its internal parts"
-                loading="lazy"
-              >
-              <span class="image-index">02</span>
-              <span class="image-caption">Disassembled</span>
-            </button>
-            <button class="gallery-card standard" aria-label="Open Early prototype">
-              <img
-                src="projects/star-finder-on-table-jpg.webp"
-                alt="Early star finder assembly on a table"
-                loading="lazy"
-              >
-              <span class="image-index">02</span>
-              <span class="image-caption">Early prototype</span>
-            </button>
-            <button class="gallery-card standard" aria-label="Open Prototype iteration">
-              <img src="projects/star-finder-jpg.webp" alt="Star finder prototype" loading="lazy">
-              <span class="image-index">02</span>
-              <span class="image-caption">Prototype iteration</span>
-            </button>      
-             <button class="gallery-card animated-card feature" aria-label="Open phone-controlled star finder">
-              <img
-                src="projects/star-finder-controlled-by-phone.gif"
-                alt="Star finder being controlled from a phone"
-                loading="lazy"
-              >
-              <span class="image-index">02</span>
-              <span class="image-caption">Phone-controlled star finder</span>
-            </button>  
-             <button class="gallery-card tall" aria-label="Open Night testing">
-              <img
-                src="projects/starfinder-2-jpg.webp"
-                alt="Star tracker being tested outdoors at night"
-                loading="lazy"
-              >
-              <span class="image-index">02</span>
-              <span class="image-caption">Night testing</span>
-            </button>    
-          </div>
-        </section>
-        <section class="project-section" id="wave-simulator" style="--project-accent:#ff7a57">
-          <div class="project-heading">
-            <span class="project-number">03</span>
-            <div>
-              <h2>Energy Harvester &amp; Wave Simulator</h2>
-              <p>A large mechatronic rig and wave-energy harvester</p>
-            </div>
-            <span class="project-count">12</span>
-          </div>
-          <div class="project-grid">
-            <button class="gallery-card animated-card tall" aria-label="Open energy harvester experiment">
-              <img
-                src="projects/energy-harvester-experiment.gif"
-                alt="Wave-energy harvester undergoing an electrical measurement experiment"
-                loading="lazy"
-              >
-              <span class="image-index">03</span>
-              <span class="image-caption">Early harvester experiment</span>
-            </button>
-            <button class="gallery-card feature" aria-label="Open Energy harvester">
-              <img
-                src="projects/wave-energy-harvester-jpg.webp"
-                alt="Wave energy harvesting mechanism"
-                loading="lazy"
-              >
-              <span class="image-index">03</span>
-              <span class="image-caption">Energy harvester</span>
-            </button>
-            <button class="gallery-card feature" aria-label="Open Moving carriage">
-              <img
-                src="projects/fully-assembled-carriage-jpg.webp"
-                alt="Assembled moving carriage for the wave simulator"
-                loading="lazy"
-              >
-              <span class="image-index">03</span>
-              <span class="image-caption">Moving carriage</span>
-            </button>
-             <button class="gallery-card tall" aria-label="Open Generator coil carriage">
-              <img
-                src="projects/coil_carriage.jpg"
-                alt="3D-printed generator coil carriage with wound copper coils"
-                loading="lazy"
-              >
-              <span class="image-index">03</span>
-              <span class="image-caption">Generator coil carriage</span>
-            </button>
-             <button class="gallery-card feature" aria-label="Open The full test rig">
-              <img
-                src="projects/overall-wave-simulator-jpg.webp"
-                alt="Full wave simulator test rig in a laboratory"
-                loading="lazy"
-              >
-              <span class="image-index">03</span>
-              <span class="image-caption">The full test rig</span>
-            </button>
-             <button class="gallery-card animated-card tall" aria-label="Open wave simulator carriage test">
-              <img
-                src="projects/wave-simulator-2.gif"
-                alt="Wave simulator carriage moving on its vertical test rig"
-                loading="lazy"
-              >
-              <span class="image-index">03</span>
-              <span class="image-caption">Wave simulator carriage</span>
-            </button>
-            <button class="gallery-card wide" aria-label="Open Assembled prototype">
-              <img
-                src="projects/assembled-prototype-jpg.webp"
-                alt="Assembled wave-energy harvester prototype"
-                loading="lazy"
-              >
-              <span class="image-index">03</span>
-              <span class="image-caption">Assembled prototype</span>
-            </button>
-            <button class="gallery-card tall" aria-label="Open Drive wheel + motor">
-              <img
-                src="projects/wheel-and-motor-jpg.webp"
-                alt="Drive wheel and motor for the simulator"
-                loading="lazy"
-              >
-              <span class="image-index">03</span>
-              <span class="image-caption">Drive wheel + motor</span>
-            </button>
-            <button class="gallery-card standard" aria-label="Open Generator measurement circuit">
-              <img
-                src="projects/measurement_circuit.jpg"
-                alt="Hand-built generator measurement circuit with an ESP32"
-                loading="lazy"
-              >
-              <span class="image-index">03</span>
-              <span class="image-caption">Generator measurement circuit</span>
-            </button>
-             <button class="gallery-card standard" aria-label="Open Measurement circuit wiring">
-              <img
-                src="projects/measurement_circuit_back.jpg"
-                alt="Point-to-point wiring on the back of the measurement circuit"
-                loading="lazy"
-              >
-              <span class="image-index">03</span>
-              <span class="image-caption">Hand-wired circuit layout</span>
-            </button>   
-            <button class="gallery-card animated-card tall" aria-label="Open wave simulator test">
-              <img
-                src="projects/wave-simulator.gif"
-                alt="Full wave simulator operating in the laboratory"
-                loading="lazy"
-              >
-              <span class="image-index">03</span>
-              <span class="image-caption">Wave simulator test</span>
-            </button>   
-             <button class="gallery-card feature" aria-label="Open Control and monitoring dashboards">
-              <img
-                src="projects/dashboard_example.png"
-                alt="Wave simulator control and generator monitoring dashboards"
-                loading="lazy"
-              >
-              <span class="image-index">03</span>
-              <span class="image-caption">Control + monitoring dashboards</span>
-            </button>      
-          </div>
-        </section>
-        <section class="project-section" id="sensing" style="--project-accent:#ffcf4a">
-          <div class="project-heading">
-            <span class="project-number">04</span>
-            <div>
-              <h2>Sensing + Interfaces</h2>
-              <p>Computer vision, radar, gestures, sound and wearables</p>
-            </div>
-            <span class="project-count">11</span>
-          </div>
-          <div class="project-grid">
-            <button class="gallery-card feature" aria-label="Open Computer-vision theremin">
-              <img
-                src="projects/cv-theremin-jpg.webp"
-                alt="Computer vision hand tracking interface"
-                loading="lazy"
-              >
-              <span class="image-index">04</span>
-              <span class="image-caption">Computer-vision theremin</span>
-            </button>
-            <button class="gallery-card tall" aria-label="Open mmWave vital-sign sensing">
-              <img
-                src="projects/mmwave-heart-and-breathrate-monitor-jpeg.webp"
-                alt="Millimeter-wave heart and breathing monitor"
-                loading="lazy"
-              >
-              <span class="image-index">04</span>
-              <span class="image-caption">mmWave vital-sign sensing</span>
-            </button>
-            <button class="gallery-card feature" aria-label="Open Invisible drum kit">
-              <img
-                src="projects/invisible-drumset-jpg.webp"
-                alt="Motion sensing invisible drum kit"
-                loading="lazy"
-              >
-              <span class="image-index">04</span>
-              <span class="image-caption">Invisible drum kit</span>
-            </button>
-            <button class="gallery-card animated-card tall" aria-label="Open Invisible drum kit demo">
-              <img
-                src="projects/invisible-drumset.gif"
-                alt="Animated demo of the invisible drum kit in use"
-                loading="lazy"
-              >
-              <span class="image-index">04</span>
-              <span class="image-caption">Invisible drum kit demo</span>
-            </button>
-             <button class="gallery-card tall" aria-label="Open mmWave position tracking">
-              <img
-                src="projects/mmwave-position-tracker-jpeg.webp"
-                alt="Millimeter-wave position tracking prototype"
-                loading="lazy"
-              >
-              <span class="image-index">04</span>
-              <span class="image-caption">mmWave position tracker</span>
-            </button>
-            <button class="gallery-card tall" aria-label="Open Fall detector CAD">
-              <img
-                src="projects/fall-detector-cad-png.webp"
-                alt="CAD design for a ceiling-mounted fall detector"
-                loading="lazy"
-              >
-              <span class="image-index">04</span>
-              <span class="image-caption">Fall detector CAD</span>
-            </button>
-            <button class="gallery-card tall" aria-label="Open Fall detector prototype">
-              <img
-                src="projects/fall-detector-jpeg.webp"
-                alt="Built ceiling-mounted fall detector"
-                loading="lazy"
-              >
-              <span class="image-index">04</span>
-              <span class="image-caption">Ceiling-mounted prototype</span>
-            </button>
-            <button class="gallery-card animated-card feature" aria-label="Open Gesture drumming">
-              <img src="projects/bongo-drummer.gif" alt="Electronic drumming project" loading="lazy">
-              <span class="image-index">04</span>
-              <span class="image-caption">bongo drummer</span>
-            </button>
-            <button class="gallery-card tall" aria-label="Open Guitar synthesizer">
-              <img
-                src="projects/guitar-synthesizer-jpeg.webp"
-                alt="Guitar fitted with custom synthesizer electronics"
-                loading="lazy"
-              >
-              <span class="image-index">04</span>
-              <span class="image-caption">Guitar synthesizer</span>
-            </button>
-             <button class="gallery-card standard" aria-label="Open IR sensing prototype">
-              <img
-                src="projects/ir-theremin-jpg.webp"
-                alt="Infrared theremin electronics prototype"
-                loading="lazy"
-              >
-              <span class="image-index">04</span>
-              <span class="image-caption">IR theremin prototype</span>
-            </button>
-                        <button class="gallery-card wide" aria-label="Open Signal chain">
-              <img
-                src="projects/irtheremin-png.webp"
-                alt="Signal diagram for an infrared theremin"
-                loading="lazy"
-              >
-              <span class="image-index">04</span>
-              <span class="image-caption">IR theremin Signal chain</span>
-            </button>
-          </div>
-        </section>
-        <section class="project-section" id="robots" style="--project-accent:#ff77a8">
-          <div class="project-heading">
-            <span class="project-number">05</span>
-            <div>
-              <h2>Robots + Embedded</h2>
-              <p>Rovers, radios, remote mechanisms and quick prototypes</p>
-            </div>
-            <span class="project-count">08</span>
-          </div>
-          <div class="project-grid">
-            <button class="gallery-card animated-card tall" aria-label="Open AI rover in motion">
-              <img
-                src="projects/ai-rover.gif"
-                alt="AI rover driving during a floor test"
-                loading="lazy"
-              >
-              <span class="image-index">05</span>
-              <span class="image-caption">AI rover in motion</span>
-            </button>
-            <button class="gallery-card tall" aria-label="Open Remote-controlled rover">
-              <img
-                src="projects/remote-controlled-rover-png.webp"
-                alt="Remote controlled rover"
-                loading="lazy"
-              >
-              <span class="image-index">05</span>
-              <span class="image-caption">Remote-controlled rover</span>
-            </button>
-            <button class="gallery-card tall" aria-label="Open Arduino radio">
-              <img
-                src="projects/arduino-radio-jpg.webp"
-                alt="Arduino radio controller"
-                loading="lazy"
-              >
-              <span class="image-index">05</span>
-              <span class="image-caption">Arduino radio</span>
-            </button>
-            <button class="gallery-card tall" aria-label="Open nRF24 MouseJacker and BLE jammer">
-              <img
-                src="projects/nrf24-mousejacker-and-ble-jammer-jpeg.webp"
-                alt="nRF24 hardware used for wireless security experiments"
-                loading="lazy"
-              >
-              <span class="image-index">05</span>
-              <span class="image-caption">nRF24 MouseJacker + BLE jammer</span>
-            </button>
-            <button class="gallery-card animated-card tall" aria-label="Open phone-controlled rover">
-              <img
-                src="projects/rover-controlled-by-phone.gif"
-                alt="Rover being controlled from a phone"
-                loading="lazy"
-              >
-              <span class="image-index">05</span>
-              <span class="image-caption">Phone-controlled rover</span>
-            </button>
-            <button class="gallery-card tall" aria-label="Open Remote light switch">
-              <img
-                src="projects/remote-light-switch-jpeg.webp"
-                alt="Remote controlled light switch"
-                loading="lazy"
-              >
-              <span class="image-index">05</span>
-              <span class="image-caption">Remote light switch</span>
-            </button>            
-          </div>
-        </section>
-        <section class="project-section" id="tools" style="--project-accent:#a78bfa">
-          <div class="project-heading">
-            <span class="project-number">06</span>
-            <div>
-              <h2>Tools + Useful Things</h2>
-              <p>Sometimes the first project is building the tool</p>
-            </div>
-            <span class="project-count">12</span>
-          </div>
-          <div class="project-grid">
-            <button class="gallery-card feature" aria-label="Open Clock CAD">
-              <img
-                src="projects/clock-cad-png.webp"
-                alt="CAD model of a custom clock enclosure"
-                loading="lazy"
-              >
-              <span class="image-index">06</span>
-              <span class="image-caption">Clock CAD</span>
-            </button>
-            <button class="gallery-card tall" aria-label="Open Clock — electronics">
-              <img
-                src="projects/clock-back-png.webp"
-                alt="Electronics in the back of a custom clock"
-                loading="lazy"
-              >
-              <span class="image-index">06</span>
-              <span class="image-caption">Clock — electronics</span>
-            </button>
-            <button class="gallery-card tall" aria-label="Open Spot welder">
-              <img
-                src="projects/spoot-welder-png.webp"
-                alt="Homemade battery spot welder"
-                loading="lazy"
-              >
-              <span class="image-index">06</span>
-              <span class="image-caption">Spot welder</span>
-            </button>
-            <button class="gallery-card tall" aria-label="Open Hand-crank generator">
-              <img
-                src="projects/hand-crank-generator-jpg.webp"
-                alt="Hand-crank generator"
-                loading="lazy"
-              >
-              <span class="image-index">06</span>
-              <span class="image-caption">Hand-crank generator</span>
-            </button>
-            <button class="gallery-card tall" aria-label="Open Generator mechanism">
-              <img
-                src="projects/hand-crank-generator-behind-jpg.webp"
-                alt="Rear view of a hand-crank generator"
-                loading="lazy"
-              >
-              <span class="image-index">06</span>
-              <span class="image-caption">Generator mechanism</span>
-            </button>
-            <button class="gallery-card animated-card tall" aria-label="Open coil winder in operation">
-              <img
-                src="projects/coil-winder.gif"
-                alt="Motorized coil winder winding copper wire"
-                loading="lazy"
-              >
-              <span class="image-index">06</span>
-              <span class="image-caption">Coil winder in operation</span>
-            </button>
-            <button class="gallery-card tall" aria-label="Open Underwater camera">
-              <img
-                src="projects/underwater-camera-jpeg.webp"
-                alt="Underwater camera prototype"
-                loading="lazy"
-              >
-              <span class="image-index">06</span>
-              <span class="image-caption">Underwater camera</span>
-            </button>
-            <button class="gallery-card tall" aria-label="Open Camera enclosure">
-              <img
-                src="projects/underwater-camera-front-jpeg.webp"
-                alt="Front view of an underwater camera enclosure"
-                loading="lazy"
-              >
-              <span class="image-index">06</span>
-              <span class="image-caption">Camera enclosure</span>
-            </button>
-            <button class="gallery-card wide" aria-label="Open Compact camera build">
-              <img
-                src="projects/small-camera-jpg.webp"
-                alt="Small camera assembly on a workbench"
-                loading="lazy"
-              >
-              <span class="image-index">06</span>
-              <span class="image-caption">Compact camera build</span>
-            </button>            
-          </div>
-        </section>
-        <section class="project-section" id="experiments" style="--project-accent:#55e6c1">
-          <div class="project-heading">
-            <span class="project-number">07</span>
-            <div>
-              <h2>High Voltage + Experiments</h2>
-              <p>Coils, sparks, lasers and years of curiosity</p>
-            </div>
-            <span class="project-count">25</span>
-          </div>
-          <div class="project-grid">
-                        <button class="gallery-card feature" aria-label="Open Early Tesla coil">
-              <img src="projects/tesla-coil-jpg.webp" alt="Tesla coil prototype" loading="lazy">
-              <span class="image-index">07</span>
-              <span class="image-caption">Tesla coil</span>
-            </button>
-            <button class="gallery-card tall" aria-label="Open Bench test">
-              <img
-                src="projects/tesla-coil-3-png.webp"
-                alt="Tesla coil operating on a workbench"
-                loading="lazy"
-              >
-              <span class="image-index">07</span>
-              <span class="image-caption">Bench test</span>
-            </button>
-            <button class="gallery-card animated-card feature" aria-label="Open Tesla coil assembly video">
-              <img
-                src="projects/tesla-coil-build-2.gif"
-                alt="Tesla coil being assembled on a workbench"
-                loading="lazy"
-              >
-              <span class="image-index">07</span>
-              <span class="image-caption">Tesla coil assembly</span>
-            </button>
-            <button class="gallery-card tall" aria-label="Open Coil assembly">
-              <img
-                src="projects/coil_assembly.PNG"
-                alt="Tesla coil during assembly"
-                loading="lazy"
-              >
-              <span class="image-index">07</span>
-              <span class="image-caption">Coil assembly</span>
-            </button>
-            <button
-              class="gallery-card animated-card tall"
-              aria-label="Open Tesla coil discharge test"
-            >
-              <img
-                src="projects/tesla-coil-discharge-test.gif"
-                alt="Electrical discharge from a Tesla coil reaching toward a hand"
-                loading="lazy"
-              >
-              <span class="image-index">07</span>
-              <span class="image-caption">Tesla coil discharge test</span>
-            </button>
-             <button class="gallery-card tall" aria-label="Open Mini Tesla coil">
-              <img
-                src="projects/mini-tesla-coil-png.webp"
-                alt="Mini Tesla coil producing an arc"
-                loading="lazy"
-              >
-              <span class="image-index">07</span>
-              <span class="image-caption">Mini Tesla coil</span>
-            </button>
-                        <button class="gallery-card tall" aria-label="Open High-voltage supply">
-              <img
-                src="projects/mot-high-voltage-supply-png.webp"
-                alt="High voltage power supply made from a microwave transformer"
-                loading="lazy"
-              >
-              <span class="image-index">07</span>
-              <span class="image-caption">High-voltage supply</span>
-            </button>
-            <button class="gallery-card animated-card feature" aria-label="Open Tesla coil build video">
-              <img
-                src="projects/tesla-coil-build.gif"
-                alt="Tesla coil construction and bench testing"
-                loading="lazy"
-              >
-              <span class="image-index">07</span>
-              <span class="image-caption">Tesla coil build</span>
-            </button>
-            <button class="gallery-card tall" aria-label="Open Induction heater">
-              <img
-                src="projects/induction-heater-png.webp"
-                alt="Homemade induction heater in operation"
-                loading="lazy"
-              >
-              <span class="image-index">07</span>
-              <span class="image-caption">Induction heater</span>
-            </button>
-             <button class="gallery-card wide" aria-label="Open Hydrogen experiment">
-              <img
-                src="projects/hydrogen-generator-jpeg.webp"
-                alt="Homemade hydrogen generator experiment"
-                loading="lazy"
-              >
-              <span class="image-index">07</span>
-              <span class="image-caption">Hydrogen experiment</span>
-            </button>
-             <button class="gallery-card tall" aria-label="Open Lichtenberg figures">
-              <img
-                src="projects/lichtenberg-figures-jpg.webp"
-                alt="Branching Lichtenberg figures burned into wood"
-                loading="lazy"
-              >
-              <span class="image-index">07</span>
-              <span class="image-caption">Lichtenberg figures</span>
-            </button>
+      </div>
+    </header>
 
-            <button class="gallery-card wide" aria-label="Open Mini coil build">
-              <img
-                src="projects/mini-tesla-coil-jpg.webp"
-                alt="Small Tesla coil on a workbench"
-                loading="lazy"
-              >
-              <span class="image-index">07</span>
-              <span class="image-caption">Mini coil build</span>
-            </button>
-            <button class="gallery-card tall" aria-label="Open Arc test">
-              <img
-                src="projects/jacobs-ladder-explosion-jpg.webp"
-                alt="Bright arc during a Jacob&#x27;s ladder experiment"
-                loading="lazy"
-              >
-              <span class="image-index">07</span>
-              <span class="image-caption">Arc test</span>
-            </button>
-            <button class="gallery-card animated-card tall" aria-label="Open Jacob’s ladder in action">
-              <img
-                src="projects/jacobs-ladder.gif"
-                alt="Electrical arc climbing a Jacob's ladder"
-                loading="lazy"
-              >
-              <span class="image-index">07</span>
-              <span class="image-caption">Jacob’s ladder in action</span>
-            </button>
-            <button class="gallery-card tall" aria-label="Open Body-coupled static experiment">
-              <img
-                src="projects/body-ionizer-so-you-can-give-shock-by-touch-jpeg.webp"
-                alt="Homemade body-coupled static electricity experiment"
-                loading="lazy"
-              >
-              <span class="image-index">07</span>
-              <span class="image-caption">Body-coupled static experiment</span>
-            </button>
-            <button class="gallery-card animated-card tall" aria-label="Open high-voltage experiment">
-              <img
-                src="projects/high-voltage.gif"
-                alt="High-voltage apparatus producing an electrical discharge"
-                loading="lazy"
-              >
-              <span class="image-index">07</span>
-              <span class="image-caption">High-voltage experiment</span>
-            </button>
-            <button class="gallery-card tall" aria-label="Open High-voltage alarm clock build">
-              <img
-                src="projects/taser-alarm-clock-png.webp"
-                alt="Modified alarm clock with a high-voltage circuit attached"
-                loading="lazy"
-              >
-              <span class="image-index">07</span>
-              <span class="image-caption">High-voltage alarm clock build</span>
-            </button>
-             <button class="gallery-card tall" aria-label="Open High-voltage alarm test">
-              <img
-                src="projects/taser-alarm-clock-jpg.webp"
-                alt="Modified alarm clock operating with a visible electrical arc"
-                loading="lazy"
-              >
-              <span class="image-index">07</span>
-              <span class="image-caption">Alarm test</span>
-            </button>
-             <button class="gallery-card tall" aria-label="Open 1 W laser build">
-              <img
-                src="projects/diy-1w-laser-jpeg.webp"
-                alt="Homemade one watt laser"
-                loading="lazy"
-              >
-              <span class="image-index">07</span>
-              <span class="image-caption">1 W laser build</span>
-            </button>
-            <button class="gallery-card animated-card tall" aria-label="Open 1 W laser test">
-              <img
-                src="projects/1w-laser.gif"
-                alt="One-watt laser being tested on a workbench"
-                loading="lazy"
-              >
-              <span class="image-index">07</span>
-              <span class="image-caption">1 W laser test</span>
-            </button>
-             <button class="gallery-card tall" aria-label="Open Desktop coil">
-              <img
-                src="projects/tesla-coil-on-desk-jpg.webp"
-                alt="Small Tesla coil on a desk"
-                loading="lazy"
-              >
-              <span class="image-index">07</span>
-              <span class="image-caption">Home workstation</span>
-            </button>
+    <main>
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">M.Sc. Mechatronics · Reykjavík, Iceland</p>
+          <h1 id="hero-title">I make<br>stuff<span>.</span></h1>
+          <p class="hero-deck">Then I instrument it, break it, rebuild it and put it to work.</p>
+          <p class="hero-intro">
+            Hands-on mechatronics engineer working across custom PCBs, embedded control,
+            mechanisms, sensing and field hardware.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-link" href="#work">Explore selected work <span aria-hidden="true">↓</span></a>
+            <a class="text-link" href="Hafthor-Arni-Hermannsson-CV.pdf" target="_blank">View CV</a>
+          </div>
+        </div>
+
+        <div class="hero-media" aria-label="Selected project photographs">
+          <button class="hero-frame hero-frame-main" type="button" data-gallery-src="projects/optitog-event-camera-laser-unit-jpeg.webp" aria-label="Open field camera and laser system">
+            <img src="projects/optitog-event-camera-laser-unit-jpeg.webp" alt="Optitog camera and laser unit on a workbench" loading="eager">
+            <span>Field hardware</span>
+          </button>
+          <button class="hero-frame" type="button" data-gallery-src="projects/overall-wave-simulator-jpg.webp" aria-label="Open wave simulator test rig">
+            <img src="projects/overall-wave-simulator-jpg.webp" alt="Full wave simulator test rig in a laboratory" loading="eager">
+            <span>M.Sc. thesis</span>
+          </button>
+          <button class="hero-frame" type="button" data-gallery-src="projects/tesla-coil-jpg.webp" aria-label="Open Tesla coil">
+            <img src="projects/tesla-coil-jpg.webp" alt="Homemade Tesla coil producing an arc" loading="eager">
+            <span>Home builds</span>
+          </button>
+          <div class="hero-stamp" aria-hidden="true">Built<br>to learn</div>
+        </div>
+
+        <dl class="hero-facts">
+          <div><dt>20+</dt><dd>documented builds</dd></div>
+          <div><dt>4-layer</dt><dd>PCB ownership</dd></div>
+          <div><dt>3 countries</dt><dd>field deployments</dd></div>
+          <div><dt>2026</dt><dd>M.Sc. completed</dd></div>
+        </dl>
+      </section>
+
+      <section class="work-index" id="work" aria-labelledby="work-title">
+        <div class="index-heading">
+          <p class="eyebrow">Selected work · 2021-2026</p>
+          <h2 id="work-title">Systems, prototypes<br>and useful mistakes.</h2>
+          <p><span id="media-total">86</span> photographs and motion clips, grouped by what the work demonstrates.</p>
+        </div>
+        <nav class="index-list" aria-label="Project sections">
+          <a href="#field"><span>01</span><strong>Professional hardware</strong><small>PCBs · sensing · deployment</small></a>
+          <a href="#wave-energy"><span>02</span><strong>Wave-energy thesis</strong><small>Mechanics · control · modelling</small></a>
+          <a href="#celestial"><span>03</span><strong>Celestial machines</strong><small>Tracking · orientation · fabrication</small></a>
+          <a href="#interfaces"><span>04</span><strong>Motion + interfaces</strong><small>IMUs · vision · sound</small></a>
+          <a href="#robots"><span>05</span><strong>Robots + wireless</strong><small>Embedded · video · protocols</small></a>
+          <a href="#tools"><span>06</span><strong>Machines + tools</strong><small>Fabrication · mechanisms · utility</small></a>
+          <a href="#experiments"><span>07</span><strong>Physical experiments</strong><small>High voltage · optics · timing</small></a>
+        </nav>
+      </section>
+
+      <div id="projects">
+        <section class="project-section" id="field" style="--project-accent:#dfff4f" aria-labelledby="field-title">
+          <div class="project-overview">
+            <div class="section-id"><span>01</span><span>Professional systems · 2023-present</span></div>
+            <div class="project-title-row">
+              <h2 id="field-title">Built for<br>the field.</h2>
+              <p>
+                At Optitog, I own PCB revisions and embedded hardware for underwater camera and laser
+                modules deployed on working fishing trawls. At Media ehf, I developed a ceiling-mounted
+                mmWave prototype for non-contact fall and vital-sign monitoring.
+              </p>
+            </div>
+            <dl class="project-facts">
+              <div><dt>Role</dt><dd>Electronics, embedded hardware, assembly</dd></div>
+              <div><dt>Methods</dt><dd>EasyEDA, Raspberry Pi, Python, sensors</dd></div>
+              <div><dt>Field work</dt><dd>Norway and Sweden</dd></div>
+            </dl>
+          </div>
+
+          <div class="gallery-group">
+            <div class="gallery-heading"><h3>Optitog · Marine technology</h3><p>Custom electronics, optical hardware, assembly and deployment.</p></div>
+            <div class="project-grid">
+              <button class="gallery-card feature mobile-wide" data-kind="System" data-detail="Event-camera and laser hardware developed as an integrated field unit." aria-label="Open camera and laser unit"><img src="projects/optitog-event-camera-laser-unit-jpeg.webp" alt="Optitog camera and laser unit on a workbench" loading="lazy"><span class="image-index"></span><span class="image-caption">Camera + laser unit</span></button>
+              <button class="gallery-card animated-card tall" data-kind="Motion" data-detail="Green-laser alignment and response testing on an early prototype." aria-label="Open prototype laser test"><img src="projects/optitog-prototype.gif" alt="Optitog prototype undergoing a green laser test" loading="lazy"><span class="image-index"></span><span class="image-caption">Prototype laser test</span></button>
+              <button class="gallery-card feature mobile-wide" data-kind="Field kit" aria-label="Open trawl equipment"><img src="projects/optitog-trawl-equipment-jpeg.webp" alt="Optitog equipment prepared for deployment" loading="lazy"><span class="image-index"></span><span class="image-caption">Deployment equipment</span></button>
+              <button class="gallery-card standard" data-kind="PCB" aria-label="Open PCB revision"><img src="projects/optitog-pcb-2-jpeg.webp" alt="Custom Optitog circuit board held in one hand" loading="lazy"><span class="image-index"></span><span class="image-caption">PCB revision</span></button>
+              <button class="gallery-card standard animated-card" data-kind="Motion" aria-label="Open live trawl monitoring"><img src="projects/optitog-trawl-equipment.gif" alt="Optitog trawl equipment displaying live monitoring data" loading="lazy"><span class="image-index"></span><span class="image-caption">Live trawl monitoring</span></button>
+              <button class="gallery-card tall" data-kind="PCB" data-detail="One of several four-layer boards maintained and revised for the deployed system." aria-label="Open round custom PCB"><img src="projects/optitog-pcb-1-jpg.webp" alt="Round custom four-layer Optitog PCB" loading="lazy"><span class="image-index"></span><span class="image-caption">Camera-system PCB</span></button>
+              <button class="gallery-card tall" data-kind="PCB" aria-label="Open sensor interface board"><img src="projects/optitog-pcb-3-jpeg.webp" alt="Long custom Optitog sensor interface PCB" loading="lazy"><span class="image-index"></span><span class="image-caption">Sensor interface board</span></button>
+              <button class="gallery-card tall" data-kind="Assembly" aria-label="Open bench assembly"><img src="projects/optitog-event-camera-laser-unit-2-jpeg.webp" alt="Optitog camera and laser unit during assembly" loading="lazy"><span class="image-index"></span><span class="image-caption">Bench assembly</span></button>
+              <button class="gallery-card animated-card tall" data-kind="Field work" aria-label="Open pop-up workshop tour"><img src="projects/optitog-pop-up-workshop.gif" alt="Temporary Optitog workshop and field equipment in Norway" loading="lazy"><span class="image-index"></span><span class="image-caption">Pop-up workshop · Norway</span></button>
+              <button class="gallery-card tall" data-kind="Prototype" aria-label="Open underwater camera"><img src="projects/underwater-camera-jpeg.webp" alt="Underwater camera prototype and electronics" loading="lazy"><span class="image-index"></span><span class="image-caption">Underwater camera prototype</span></button>
+              <button class="gallery-card tall" data-kind="Enclosure" aria-label="Open camera enclosure"><img src="projects/underwater-camera-front-jpeg.webp" alt="Front view of an underwater camera enclosure" loading="lazy"><span class="image-index"></span><span class="image-caption">Pressure enclosure</span></button>
+            </div>
+          </div>
+
+          <div class="gallery-group">
+            <div class="gallery-heading"><h3>Media ehf · Ambient sensing</h3><p>A ceiling-mounted mmWave radar prototype for fall detection and vital-sign monitoring.</p></div>
+            <div class="project-grid">
+              <button class="gallery-card tall" data-kind="Sensing" data-detail="Non-contact measurement of heart and breathing rates with mmWave radar." aria-label="Open vital-sign sensing prototype"><img src="projects/mmwave-heart-and-breathrate-monitor-jpeg.webp" alt="Millimeter-wave heart and breathing monitor prototype" loading="lazy"><span class="image-index"></span><span class="image-caption">Vital-sign sensing</span></button>
+              <button class="gallery-card feature" data-kind="Sensing" aria-label="Open position tracker"><img src="projects/mmwave-position-tracker-jpeg.webp" alt="Millimeter-wave position tracking prototype" loading="lazy"><span class="image-index"></span><span class="image-caption">Room-scale position tracking</span></button>
+              <button class="gallery-card feature" data-kind="CAD" aria-label="Open fall detector CAD"><img src="projects/fall-detector-cad-png.webp" alt="CAD design for the ceiling-mounted radar enclosure" loading="lazy"><span class="image-index"></span><span class="image-caption">Ceiling enclosure CAD</span></button>
+              <button class="gallery-card tall" data-kind="Prototype" aria-label="Open ceiling-mounted prototype"><img src="projects/fall-detector-jpeg.webp" alt="Built ceiling-mounted fall detector prototype" loading="lazy"><span class="image-index"></span><span class="image-caption">Installed prototype</span></button>
+            </div>
           </div>
         </section>
-        <section class="project-section" id="archive" style="--project-accent:#f59e0b">
-          <div class="project-heading">
-            <span class="project-number">08</span>
-            <div>
-              <h2>More From the Bench</h2>
-              <p>Software, optics, effects and smaller builds</p>
+
+        <section class="project-section" id="wave-energy" style="--project-accent:#ff785a" aria-labelledby="wave-title">
+          <div class="project-overview">
+            <div class="section-id"><span>02</span><span>M.Sc. thesis · 2025-2026</span></div>
+            <div class="project-title-row">
+              <h2 id="wave-title">Motion into<br>power.</h2>
+              <p>
+                A sealed internal generator for a self-powered monitoring buoy, developed from
+                electromagnetic modelling through prototype construction and repeatable bench testing.
+                I also built the rope-driven simulator used to reproduce vertical wave motion.
+              </p>
             </div>
-            <span class="project-count">07</span>
+            <dl class="project-facts">
+              <div><dt>Architecture</dt><dd>Three-coil carriage on a segmented magnetic rod</dd></div>
+              <div><dt>Control</dt><dd>50 Hz PID + feedforward, soft limits, watchdog</dd></div>
+              <div><dt>Result</dt><dd>8.8 W predicted inside a strict 1.8 m envelope</dd></div>
+            </dl>
+            <div class="project-links"><a class="project-link" href="https://skemman.is/handle/1946/53868?locale=en" target="_blank" rel="noreferrer">Read the published thesis <span aria-hidden="true">↗</span></a><a class="project-link" href="https://github.com/HafthorArni/wave-energy-harvester-thesis" target="_blank" rel="noreferrer">Project archive on GitHub <span aria-hidden="true">↗</span></a></div>
           </div>
-          <div class="project-grid">
-            <button class="gallery-card tall" aria-label="Open Stroboscope">
-              <img
-                src="projects/stroboscope-good-photo-png.webp"
-                alt="Homemade stroboscope"
-                loading="lazy"
-              >
-              <span class="image-index">08</span>
-              <span class="image-caption">Stroboscope</span>
-            </button>
-             <button class="gallery-card tall" aria-label="Open Strobe prototype">
-              <img src="projects/stroboscope-jpg.webp" alt="Stroboscope prototype" loading="lazy">
-              <span class="image-index">08</span>
-              <span class="image-caption">Strobe prototype</span>
-            </button>
-            <button class="gallery-card animated-card tall" aria-label="Open stroboscope water effect video">
-              <img
-                src="projects/stroboscope-water-effect.gif"
-                alt="Falling water appearing frozen under a stroboscope"
-                loading="lazy"
-              >
-              <span class="image-index">08</span>
-              <span class="image-caption">Stroboscope water effect</span>
-            </button>
-             <button class="gallery-card tall" aria-label="Open 3D printer rebuild">
-              <img
-                src="projects/disasembled-3d-printer-jpg.webp"
-                alt="3D printer disassembled on a workbench"
-                loading="lazy"
-              >
-              <span class="image-index">06</span>
-              <span class="image-caption">3D printer rebuild</span>
-            </button>
-             <button class="gallery-card tall" aria-label="Open Audio-to-image program">
-              <img
-                src="projects/audio-to-image-program-png.webp"
-                alt="Audio transformed into an image by custom software"
-                loading="lazy"
-              >
-              <span class="image-index">08</span>
-              <span class="image-caption">Audio-to-image program</span>
-            </button>
-            <button class="gallery-card feature" aria-label="Open Where a lot of this began">
-              <img
-                src="projects/early-home-workshop-jpg.webp"
-                alt="Early home electronics workshop"
-                loading="lazy"
-              >
-              <span class="image-index">08</span>
-              <span class="image-caption">Where a lot of this began</span>
-            </button>            
+
+          <div class="gallery-group">
+            <div class="gallery-heading"><h3>Harvester + test platform</h3><p>Generator mechanics, instrumentation, control and measured experiments.</p></div>
+            <div class="project-grid">
+              <button class="gallery-card feature mobile-wide" data-kind="System" data-detail="The complete rope-driven wave simulator and instrumented harvester test platform." aria-label="Open full wave simulator"><img src="projects/overall-wave-simulator-jpg.webp" alt="Full wave simulator test rig in the laboratory" loading="lazy"><span class="image-index"></span><span class="image-caption">Complete test platform</span></button>
+              <button class="gallery-card animated-card tall" data-kind="Motion" aria-label="Open operating wave simulator"><img src="projects/wave-simulator.gif" alt="Full wave simulator operating in the laboratory" loading="lazy"><span class="image-index"></span><span class="image-caption">Closed-loop motion test</span></button>
+              <button class="gallery-card feature" data-kind="Generator" aria-label="Open wave energy harvester"><img src="projects/wave-energy-harvester-jpg.webp" alt="Linear electromagnetic wave-energy harvesting mechanism" loading="lazy"><span class="image-index"></span><span class="image-caption">Linear energy harvester</span></button>
+              <button class="gallery-card animated-card tall" data-kind="Experiment" aria-label="Open energy harvester experiment"><img src="projects/energy-harvester-experiment.gif" alt="Wave-energy harvester undergoing an electrical measurement experiment" loading="lazy"><span class="image-index"></span><span class="image-caption">Generator experiment</span></button>
+              <button class="gallery-card wide mobile-wide" data-kind="Assembly" aria-label="Open assembled prototype"><img src="projects/assembled-prototype-jpg.webp" alt="Assembled bench-scale wave-energy harvester prototype" loading="lazy"><span class="image-index"></span><span class="image-caption">Bench-scale prototype</span></button>
+              <button class="gallery-card standard" data-kind="Mechanism" aria-label="Open generator coil carriage"><img src="projects/coil_carriage.jpg" alt="Three-coil generator carriage with wound copper coils" loading="lazy"><span class="image-index"></span><span class="image-caption">Three-coil carriage</span></button>
+              <button class="gallery-card feature mobile-wide" data-kind="Mechanism" aria-label="Open moving carriage"><img src="projects/fully-assembled-carriage-jpg.webp" alt="Assembled moving carriage for the simulator" loading="lazy"><span class="image-index"></span><span class="image-caption">Simulator carriage</span></button>
+              <button class="gallery-card animated-card tall" data-kind="Motion" aria-label="Open carriage motion test"><img src="projects/wave-simulator-2.gif" alt="Wave simulator carriage moving on its vertical test rig" loading="lazy"><span class="image-index"></span><span class="image-caption">Carriage motion test</span></button>
+              <button class="gallery-card tall" data-kind="Drive" aria-label="Open drive wheel and motor"><img src="projects/wheel-and-motor-jpg.webp" alt="Drive wheel and motor for the rope-driven simulator" loading="lazy"><span class="image-index"></span><span class="image-caption">Rope drive + motor</span></button>
+              <button class="gallery-card tall animated-card" data-kind="Tool" aria-label="Open coil winder in operation"><img src="projects/coil-winder.gif" alt="Motorized coil winder winding copper wire for the harvester" loading="lazy"><span class="image-index"></span><span class="image-caption">Custom coil winder</span></button>
+              <button class="gallery-card standard" data-kind="Instrumentation" aria-label="Open measurement circuit"><img src="projects/measurement_circuit.jpg" alt="Hand-built ESP32-S2 generator measurement circuit" loading="lazy"><span class="image-index"></span><span class="image-caption">Onboard instrumentation</span></button>
+              <button class="gallery-card standard" data-kind="Wiring" aria-label="Open measurement circuit wiring"><img src="projects/measurement_circuit_back.jpg" alt="Point-to-point wiring on the measurement circuit" loading="lazy"><span class="image-index"></span><span class="image-caption">Hand-wired circuit layout</span></button>
+              <button class="gallery-card feature mobile-standard" data-kind="Software" aria-label="Open control dashboards"><img src="projects/dashboard_example.png" alt="Wave-simulator control and generator monitoring dashboards" loading="lazy"><span class="image-index"></span><span class="image-caption">Control + measurement dashboards</span></button>
+            </div>
+          </div>
+        </section>
+
+        <section class="project-section" id="celestial" style="--project-accent:#69c6ff" aria-labelledby="celestial-title">
+          <div class="project-overview">
+            <div class="section-id"><span>03</span><span>Self-directed · 2022-2023</span></div>
+            <div class="project-title-row">
+              <h2 id="celestial-title">Pointed at<br>the sky.</h2>
+              <p>
+                Two related celestial rigs: a pan-tilt camera mount that compensates for Earth’s rotation,
+                and a 9-DOF StarPointer that locates stars from celestial coordinates. Both were built at
+                home with custom mechanics, electronics and mobile control.
+              </p>
+            </div>
+            <dl class="project-facts">
+              <div><dt>Mechanics</dt><dd>Fusion 360, 3D printing, pan + tilt drives</dd></div>
+              <div><dt>Control</dt><dd>Bluetooth mobile interface</dd></div>
+              <div><dt>Sensing</dt><dd>9-DOF orientation + magnetic heading</dd></div>
+            </dl>
+          </div>
+
+          <div class="gallery-group">
+            <div class="gallery-heading"><h3>StarTracker + StarPointer</h3><p>Mechanical iterations, controller electronics and testing under the night sky.</p></div>
+            <div class="project-grid">
+              <button class="gallery-card feature mobile-wide" data-kind="System" aria-label="Open telescope configuration"><img src="projects/startracker-with-telescope-jpeg.webp" alt="Motorized star tracker carrying a telescope" loading="lazy"><span class="image-index"></span><span class="image-caption">Telescope configuration</span></button>
+              <button class="gallery-card animated-card tall" data-kind="Motion" aria-label="Open tracker motion test"><img src="projects/star-tracker.gif" alt="Motorized star tracker moving during a bench test" loading="lazy"><span class="image-index"></span><span class="image-caption">Tracker motion test</span></button>
+              <button class="gallery-card feature mobile-wide" data-kind="CAD" aria-label="Open mechanical design"><img src="projects/startracker-cad-png.webp" alt="CAD model of the star-tracking mount" loading="lazy"><span class="image-index"></span><span class="image-caption">Mechanical design</span></button>
+              <button class="gallery-card tall" data-kind="Mechanism" aria-label="Open tilt mechanism"><img src="projects/star-tracker-tiltmagnet-jpg.webp" alt="Star tracker tilt mechanism and magnetic sensor" loading="lazy"><span class="image-index"></span><span class="image-caption">Tilt + magnetic sensing</span></button>
+              <button class="gallery-card wide mobile-wide" data-kind="Assembly" aria-label="Open disassembled tracker"><img src="projects/star-tracker-disasembled-jpg.webp" alt="Star tracker disassembled to show its internal parts" loading="lazy"><span class="image-index"></span><span class="image-caption">Designed for assembly</span></button>
+              <button class="gallery-card standard" data-kind="Electronics" aria-label="Open controls inside the base"><img src="projects/startracker-electronics1-jpg.webp" alt="Controller electronics inside the tracker base" loading="lazy"><span class="image-index"></span><span class="image-caption">Controls inside the base</span></button>
+              <button class="gallery-card standard" data-kind="Electronics" aria-label="Open controller board"><img src="projects/startracker-electronics3-jpg.webp" alt="Hand-built star tracker controller board" loading="lazy"><span class="image-index"></span><span class="image-caption">Controller board</span></button>
+              <button class="gallery-card standard" data-kind="Wiring" aria-label="Open hand-wired underside"><img src="projects/startracker-electronics4-jpg.webp" alt="Point-to-point wiring on the back of the controller board" loading="lazy"><span class="image-index"></span><span class="image-caption">Hand-wired underside</span></button>
+              <button class="gallery-card tall" data-kind="Night test" aria-label="Open night testing"><img src="projects/starfinder-2-jpg.webp" alt="Star tracker being tested outdoors at night" loading="lazy"><span class="image-index"></span><span class="image-caption">Night-sky testing</span></button>
+              <button class="gallery-card animated-card feature mobile-wide" data-kind="Motion" data-detail="The phone-controlled StarPointer locating targets from celestial coordinates." aria-label="Open phone-controlled star finder"><img src="projects/star-finder-controlled-by-phone.gif" alt="StarPointer being controlled from a phone" loading="lazy"><span class="image-index"></span><span class="image-caption">Phone-controlled StarPointer</span></button>
+              <button class="gallery-card standard" data-kind="Prototype" aria-label="Open early star finder"><img src="projects/star-finder-on-table-jpg.webp" alt="Early StarPointer assembly on a table" loading="lazy"><span class="image-index"></span><span class="image-caption">Early StarPointer</span></button>
+              <button class="gallery-card tall mobile-wide" data-kind="Prototype" aria-label="Open prototype iteration"><img src="projects/star-finder-jpg.webp" alt="Star finder prototype" loading="lazy"><span class="image-index"></span><span class="image-caption">Prototype iteration</span></button>
+              <button class="gallery-card animated-card feature mobile-wide" data-kind="Second life" data-detail="The StarPointer mechanism repurposed to play bongo drums, keeping this media with the device it came from." aria-label="Open bongo drummer"><img src="projects/bongo-drummer.gif" alt="The StarPointer mechanism operating as a bongo drumming machine" loading="lazy"><span class="image-index"></span><span class="image-caption">StarPointer turned bongo drummer</span></button>
+            </div>
+          </div>
+        </section>
+
+        <section class="project-section" id="interfaces" style="--project-accent:#ffc94a" aria-labelledby="interfaces-title">
+          <div class="project-overview">
+            <div class="section-id"><span>04</span><span>Embedded interaction · 2023-2024</span></div>
+            <div class="project-title-row">
+              <h2 id="interfaces-title">Movement<br>becomes input.</h2>
+              <p>
+                Instruments and interfaces that turn hand position, motion and sensor data into sound
+                or visual output. The common thread is a short path from physical action to immediate feedback.
+              </p>
+            </div>
+            <dl class="project-facts">
+              <div><dt>Invisible drums</dt><dd>ATmega328P, BNO055, bare-metal C, Python audio</dd></div>
+              <div><dt>Theremins</dt><dd>OpenCV, IR ranging, FM synthesis, Pure Data</dd></div>
+              <div><dt>Latency</dt><dd>30-50 ms motion to sound</dd></div>
+            </dl>
+            <div class="project-links"><a class="project-link" href="https://github.com/HafthorArni/Invisible-Drum-Set" target="_blank" rel="noreferrer">Invisible Drum Set on GitHub <span aria-hidden="true">↗</span></a><a class="project-link" href="https://github.com/HafthorArni/hand-tracking-synth-looper" target="_blank" rel="noreferrer">Hand-tracking synth on GitHub <span aria-hidden="true">↗</span></a><a class="project-link" href="https://github.com/HafthorArni/Digital-Theremin" target="_blank" rel="noreferrer">Digital theremin on GitHub <span aria-hidden="true">↗</span></a></div>
+          </div>
+
+          <div class="gallery-group">
+            <div class="gallery-heading"><h3>Gesture, motion + sound</h3><p>Physical interfaces designed around the way a person moves.</p></div>
+            <div class="project-grid">
+              <button class="gallery-card feature" data-kind="Embedded" data-detail="Dual-IMU virtual drum kit with custom sensor and communication drivers written in C." aria-label="Open invisible drum kit"><img src="projects/invisible-drumset-jpg.webp" alt="Motion-sensing invisible drum kit hardware" loading="lazy"><span class="image-index"></span><span class="image-caption">Invisible Drum Set</span></button>
+              <button class="gallery-card animated-card tall" data-kind="Motion" aria-label="Open invisible drum kit demo"><img src="projects/invisible-drumset.gif" alt="Invisible Drum Set being played with motion-sensing sticks" loading="lazy"><span class="image-index"></span><span class="image-caption">Motion-to-sound demo</span></button>
+              <button class="gallery-card feature mobile-wide" data-kind="Computer vision" data-detail="Two-hand tracking controls multiple parameters in a Python FM synthesizer." aria-label="Open computer vision theremin"><img src="projects/cv-theremin-jpg.webp" alt="OpenCV hand tracking used to control an FM synthesizer" loading="lazy"><span class="image-index"></span><span class="image-caption">Computer-vision theremin</span></button>
+              <button class="gallery-card tall" data-kind="Instrument" aria-label="Open guitar synthesizer"><img src="projects/guitar-synthesizer-jpeg.webp" alt="Guitar fitted with custom synthesizer electronics" loading="lazy"><span class="image-index"></span><span class="image-caption">Guitar synthesizer</span></button>
+              <button class="gallery-card feature mobile-wide" data-kind="Prototype" aria-label="Open IR sensing prototype"><img src="projects/ir-theremin-jpg.webp" alt="Infrared theremin electronics prototype" loading="lazy"><span class="image-index"></span><span class="image-caption">IR sensing prototype</span></button>
+              <button class="gallery-card standard" data-kind="Signal path" aria-label="Open IR theremin signal chain"><img src="projects/irtheremin-png.webp" alt="Signal diagram for an infrared theremin and FM synthesizer" loading="lazy"><span class="image-index"></span><span class="image-caption">Sensing + synthesis chain</span></button>
+              <button class="gallery-card standard" data-kind="Software" aria-label="Open audio to image program"><img src="projects/audio-to-image-program-png.webp" alt="Audio transformed into an image by a custom spectrum-analysis program" loading="lazy"><span class="image-index"></span><span class="image-caption">Audio-to-image algorithm</span></button>
+            </div>
+          </div>
+        </section>
+
+        <section class="project-section" id="robots" style="--project-accent:#ff76a8" aria-labelledby="robots-title">
+          <div class="project-overview">
+            <div class="section-id"><span>05</span><span>Robotics + wireless systems</span></div>
+            <div class="project-title-row">
+              <h2 id="robots-title">Untethered<br>machines.</h2>
+              <p>
+                Mobile robots, remote mechanisms and wireless experiments spanning Raspberry Pi video,
+                UDP motor control, microcontrollers and reverse-engineering of 2.4 GHz devices.
+              </p>
+            </div>
+            <dl class="project-facts">
+              <div><dt>Rover</dt><dd>H.264 video, UDP control, vision + scene feedback</dd></div>
+              <div><dt>Embedded</dt><dd>Raspberry Pi, Arduino, nRF52840</dd></div>
+              <div><dt>Protocols</dt><dd>Bluetooth, Wi-Fi, proprietary 2.4 GHz</dd></div>
+            </dl>
+            <div class="project-links"><a class="project-link" href="https://github.com/HafthorArni/autonomous-AI-rover" target="_blank" rel="noreferrer">AI rover on GitHub <span aria-hidden="true">↗</span></a><a class="project-link" href="https://github.com/HafthorArni/nRF52840_Mousejacker" target="_blank" rel="noreferrer">2.4 GHz research on GitHub <span aria-hidden="true">↗</span></a></div>
+          </div>
+
+          <div class="gallery-group">
+            <div class="gallery-heading"><h3>Rovers, radios + remote mechanisms</h3><p>From course rover to autonomous Linux platform and wireless protocol tools.</p></div>
+            <div class="project-grid">
+              <button class="gallery-card animated-card tall" data-kind="Motion" aria-label="Open AI rover in motion"><img src="projects/ai-rover.gif" alt="Autonomous Raspberry Pi rover driving during a floor test" loading="lazy"><span class="image-index"></span><span class="image-caption">Autonomous rover test</span></button>
+              <button class="gallery-card tall" data-kind="Robot" aria-label="Open remote-controlled rover"><img src="projects/remote-controlled-rover-png.webp" alt="Remote-controlled sensor rover" loading="lazy"><span class="image-index"></span><span class="image-caption">Sensor rover</span></button>
+              <button class="gallery-card tall" data-kind="Controller" aria-label="Open Arduino radio"><img src="projects/arduino-radio-jpg.webp" alt="Arduino-based handheld radio controller" loading="lazy"><span class="image-index"></span><span class="image-caption">Arduino radio controller</span></button>
+              <button class="gallery-card tall" data-kind="Wireless" data-detail="nRF52840 tools used to study proprietary wireless HID traffic and related 2.4 GHz experiments." aria-label="Open wireless protocol hardware"><img src="projects/nrf24-mousejacker-and-ble-jammer-jpeg.webp" alt="nRF hardware used for wireless security and protocol experiments" loading="lazy"><span class="image-index"></span><span class="image-caption">2.4 GHz protocol experiments</span></button>
+              <button class="gallery-card animated-card tall" data-kind="Motion" aria-label="Open phone-controlled rover"><img src="projects/rover-controlled-by-phone.gif" alt="Rover being driven from a phone" loading="lazy"><span class="image-index"></span><span class="image-caption">Phone-controlled drive</span></button>
+              <button class="gallery-card tall" data-kind="Mechanism" aria-label="Open remote light switch"><img src="projects/remote-light-switch-jpeg.webp" alt="Remote-controlled mechanical light switch" loading="lazy"><span class="image-index"></span><span class="image-caption">Remote light switch</span></button>
+            </div>
+          </div>
+        </section>
+
+        <section class="project-section" id="tools" style="--project-accent:#ab91ff" aria-labelledby="tools-title">
+          <div class="project-overview">
+            <div class="section-id"><span>06</span><span>Workshop builds + useful objects</span></div>
+            <div class="project-title-row">
+              <h2 id="tools-title">Build the<br>thing you need.</h2>
+              <p>
+                Small machines and practical objects made from designed parts, salvaged components
+                and whatever fabrication method was available. Some solve a problem; others improve the workshop.
+              </p>
+            </div>
+            <dl class="project-facts">
+              <div><dt>Fabrication</dt><dd>Fusion 360, 3D printing, power tools</dd></div>
+              <div><dt>Electronics</dt><dd>Soldering, rework, salvaged components</dd></div>
+              <div><dt>Approach</dt><dd>Fast prototypes, test, revise</dd></div>
+            </dl>
+          </div>
+
+          <div class="gallery-group">
+            <div class="gallery-heading"><h3>Everyday machines</h3><p>Clocks, power tools, generators and workshop repairs.</p></div>
+            <div class="project-grid">
+              <button class="gallery-card feature mobile-wide" data-kind="CAD" aria-label="Open clock CAD"><img src="projects/clock-cad-png.webp" alt="CAD model of a custom clock enclosure" loading="lazy"><span class="image-index"></span><span class="image-caption">Custom clock enclosure</span></button>
+              <button class="gallery-card tall" data-kind="Electronics" aria-label="Open clock electronics"><img src="projects/clock-back-png.webp" alt="Electronics in the back of the custom clock" loading="lazy"><span class="image-index"></span><span class="image-caption">Clock electronics</span></button>
+              <button class="gallery-card tall" data-kind="Tool" aria-label="Open spot welder"><img src="projects/spoot-welder-png.webp" alt="Homemade battery spot welder" loading="lazy"><span class="image-index"></span><span class="image-caption">Battery spot welder</span></button>
+              <button class="gallery-card tall" data-kind="Generator" data-detail="A hand-crank generator made from discarded parts and a microwave synchronous motor." aria-label="Open hand-crank generator"><img src="projects/hand-crank-generator-jpg.webp" alt="Hand-crank generator made from salvaged parts" loading="lazy"><span class="image-index"></span><span class="image-caption">Salvaged hand-crank generator</span></button>
+              <button class="gallery-card tall" data-kind="Mechanism" aria-label="Open generator mechanism"><img src="projects/hand-crank-generator-behind-jpg.webp" alt="Rear view of the hand-crank generator mechanism" loading="lazy"><span class="image-index"></span><span class="image-caption">Generator mechanism</span></button>
+              <button class="gallery-card feature" data-kind="Repair" aria-label="Open 3D printer rebuild"><img src="projects/disasembled-3d-printer-wide.webp" alt="3D printer disassembled across a workbench" loading="lazy"><span class="image-index"></span><span class="image-caption">3D printer rebuild</span></button>
+              <button class="gallery-card tall" data-kind="Prototype" aria-label="Open compact camera build"><img src="projects/small-camera-jpg.webp" alt="Compact camera assembly on a workbench" loading="lazy"><span class="image-index"></span><span class="image-caption">Compact camera build</span></button>
+            </div>
+          </div>
+        </section>
+
+        <section class="project-section" id="experiments" style="--project-accent:#54e3bd" aria-labelledby="experiments-title">
+          <div class="project-overview">
+            <div class="section-id"><span>07</span><span>Self-directed physical experiments · 2021-2024</span></div>
+            <div class="project-title-row">
+              <h2 id="experiments-title">Current,<br>light + noise.</h2>
+              <p>
+                High-voltage drivers, hand-wound coils, optical experiments and playful builds.
+                These projects are where I learned fastest: construct the circuit, observe the physical result,
+                find the weak point and try again.
+              </p>
+            </div>
+            <dl class="project-facts">
+              <div><dt>Tesla coil</dt><dd>Hand-wound secondary, custom driver boards</dd></div>
+              <div><dt>Other builds</dt><dd>Induction, strobing, lasers, electrostatics</dd></div>
+              <div><dt>Method</dt><dd>Design, salvage, fabricate, test</dd></div>
+            </dl>
+          </div>
+
+          <div class="gallery-group">
+            <div class="gallery-heading"><h3>Tesla coils</h3><p>Interrupted solid-state drivers, custom parts and a hand-wound secondary.</p></div>
+            <div class="project-grid">
+              <button class="gallery-card feature" data-kind="System" aria-label="Open Tesla coil"><img src="projects/tesla-coil-jpg.webp" alt="Large homemade Tesla coil producing an arc" loading="lazy"><span class="image-index"></span><span class="image-caption">Interrupted SSTC</span></button>
+              <button class="gallery-card tall" data-kind="Test" aria-label="Open Tesla coil bench test"><img src="projects/tesla-coil-3-png.webp" alt="Tesla coil operating on a workbench" loading="lazy"><span class="image-index"></span><span class="image-caption">Bench test</span></button>
+              <button class="gallery-card animated-card feature mobile-wide" data-kind="Motion" aria-label="Open Tesla coil assembly"><img src="projects/tesla-coil-build-2.gif" alt="Tesla coil being assembled on a workbench" loading="lazy"><span class="image-index"></span><span class="image-caption">Assembly sequence</span></button>
+              <button class="gallery-card tall" data-kind="Assembly" aria-label="Open coil assembly"><img src="projects/coil_assembly.PNG" alt="Tesla coil during mechanical assembly" loading="lazy"><span class="image-index"></span><span class="image-caption">Coil assembly</span></button>
+              <button class="gallery-card animated-card tall" data-kind="Motion" aria-label="Open discharge test"><img src="projects/tesla-coil-discharge-test.gif" alt="Tesla coil electrical discharge test" loading="lazy"><span class="image-index"></span><span class="image-caption">Discharge test</span></button>
+              <button class="gallery-card tall" data-kind="Prototype" aria-label="Open mini Tesla coil"><img src="projects/mini-tesla-coil-png.webp" alt="Mini Tesla coil producing an arc" loading="lazy"><span class="image-index"></span><span class="image-caption">Mini Tesla coil</span></button>
+              <button class="gallery-card wide" data-kind="Prototype" aria-label="Open mini coil build"><img src="projects/mini-tesla-coil-jpg.webp" alt="Small Tesla coil on a workbench" loading="lazy"><span class="image-index"></span><span class="image-caption">Compact coil build</span></button>
+              <button class="gallery-card animated-card tall mobile-wide" data-kind="Motion" aria-label="Open Tesla coil build"><img src="projects/tesla-coil-build.gif" alt="Tesla coil construction and bench testing" loading="lazy"><span class="image-index"></span><span class="image-caption">Build + test</span></button>
+              <button class="gallery-card standard" data-kind="Prototype" aria-label="Open desktop coil"><img src="projects/tesla-coil-on-desk-jpg.webp" alt="Small Tesla coil on a desk" loading="lazy"><span class="image-index"></span><span class="image-caption">Desktop coil</span></button>
+            </div>
+          </div>
+
+          <div class="gallery-group">
+            <div class="gallery-heading"><h3>High voltage + induction</h3><p>Power supplies, arcs, electromagnetic heating and electrostatic effects.</p></div>
+            <div class="project-grid">
+              <button class="gallery-card tall" data-kind="Power" aria-label="Open high voltage supply"><img src="projects/mot-high-voltage-supply-png.webp" alt="High-voltage supply made with a microwave transformer" loading="lazy"><span class="image-index"></span><span class="image-caption">MOT high-voltage supply</span></button>
+              <button class="gallery-card tall" data-kind="Induction" data-detail="DIY astable-multivibrator driver and custom inductors heating ferromagnetic material." aria-label="Open induction heater"><img src="projects/induction-heater-png.webp" alt="Homemade induction heater in operation" loading="lazy"><span class="image-index"></span><span class="image-caption">Induction heater</span></button>
+              <button class="gallery-card animated-card tall" data-kind="Motion" aria-label="Open Jacob's ladder"><img src="projects/jacobs-ladder.gif" alt="Electrical arc climbing a Jacob's ladder" loading="lazy"><span class="image-index"></span><span class="image-caption">Jacob’s ladder</span></button>
+              <button class="gallery-card tall" data-kind="Arc" aria-label="Open arc test"><img src="projects/jacobs-ladder-explosion-jpg.webp" alt="Bright arc during a Jacob's ladder experiment" loading="lazy"><span class="image-index"></span><span class="image-caption">Arc test</span></button>
+              <button class="gallery-card tall" data-kind="Electrostatic" aria-label="Open body ionizer"><img src="projects/body-ionizer-so-you-can-give-shock-by-touch-jpeg.webp" alt="Body-coupled static electricity experiment" loading="lazy"><span class="image-index"></span><span class="image-caption">Body-coupled static experiment</span></button>
+              <button class="gallery-card animated-card tall" data-kind="Motion" aria-label="Open high voltage experiment"><img src="projects/high-voltage.gif" alt="High-voltage apparatus producing an electrical discharge" loading="lazy"><span class="image-index"></span><span class="image-caption">High-voltage discharge</span></button>
+              <button class="gallery-card tall" data-kind="Material" aria-label="Open Lichtenberg figures"><img src="projects/lichtenberg-figures-jpg.webp" alt="Branching Lichtenberg figures burned into wood" loading="lazy"><span class="image-index"></span><span class="image-caption">Lichtenberg figures</span></button>
+              <button class="gallery-card tall" data-kind="Playful build" aria-label="Open high voltage alarm clock"><img src="projects/taser-alarm-clock-png.webp" alt="Modified alarm clock with a high-voltage circuit attached" loading="lazy"><span class="image-index"></span><span class="image-caption">High-voltage alarm clock</span></button>
+              <button class="gallery-card tall mobile-square" data-kind="Test" aria-label="Open alarm test"><img src="projects/taser-alarm-clock-jpg.webp" alt="High-voltage alarm clock with visible arc" loading="lazy"><span class="image-index"></span><span class="image-caption">Alarm test</span></button>
+            </div>
+          </div>
+
+          <div class="gallery-group">
+            <div class="gallery-heading"><h3>Optics, timing + bench curiosities</h3><p>Light, frequency and a few experiments built simply to see what would happen.</p></div>
+            <div class="project-grid">
+              <button class="gallery-card feature" data-kind="Optics" aria-label="Open one watt laser"><img src="projects/diy-1w-laser-jpeg.webp" alt="Homemade one-watt laser built from salvaged optics" loading="lazy"><span class="image-index"></span><span class="image-caption">1 W laser build</span></button>
+              <button class="gallery-card animated-card tall" data-kind="Motion" aria-label="Open laser test"><img src="projects/1w-laser.gif" alt="One-watt laser being tested on a workbench" loading="lazy"><span class="image-index"></span><span class="image-caption">Laser test</span></button>
+              <button class="gallery-card tall" data-kind="Optics" aria-label="Open DVD laser"><img src="projects/dvd-laser-png.webp" alt="Small laser experiment made from a DVD-drive diode" loading="lazy"><span class="image-index"></span><span class="image-caption">Salvaged DVD laser</span></button>
+              <button class="gallery-card tall" data-kind="Timing" data-detail="A circuit designed to freeze periodic motion visually, including a water-droplet effect." aria-label="Open stroboscope"><img src="projects/stroboscope-good-photo-png.webp" alt="Homemade adjustable stroboscope" loading="lazy"><span class="image-index"></span><span class="image-caption">Adjustable stroboscope</span></button>
+              <button class="gallery-card animated-card tall" data-kind="Motion" aria-label="Open stroboscope water effect"><img src="projects/stroboscope-water-effect.gif" alt="Falling water appearing frozen under a synchronized stroboscope" loading="lazy"><span class="image-index"></span><span class="image-caption">Frozen-water effect</span></button>
+              <button class="gallery-card tall" data-kind="Prototype" aria-label="Open strobe prototype"><img src="projects/stroboscope-jpg.webp" alt="Early stroboscope circuit prototype" loading="lazy"><span class="image-index"></span><span class="image-caption">Strobe prototype</span></button>
+              <button class="gallery-card feature mobile-wide" data-kind="Experiment" aria-label="Open hydrogen experiment"><img src="projects/hydrogen-generator-jpeg.webp" alt="Small hydrogen generator experiment on a desk" loading="lazy"><span class="image-index"></span><span class="image-caption">Hydrogen generator experiment</span></button>
+            </div>
           </div>
         </section>
       </div>
-      <section class="about" id="about">
-        <p class="eyebrow">About</p>
-        <div class="about-grid">
-          <h2>
-            Ideas are better
-            <br>
-            when they become
-            <br>
-            <em>physical.</em>
-          </h2>
-          <div class="about-copy">
-            <p>
-              I’m Hafþór, a mechatronics engineer based in Reykjavík. I enjoy turning ideas into
-              physical machines through custom electronics, embedded systems, CAD, fabrication and
-              testing.
-            </p>
-            <p>
-              This is the visual version of the story: finished systems, imperfect prototypes,
-              workbench chaos and the experiments that taught me how to build the next thing.
-            </p>
+
+      <section class="about" id="about" aria-labelledby="about-title">
+        <div class="about-heading">
+          <p class="eyebrow">Profile</p>
+          <h2 id="about-title">Curiosity,<br>with a wiring<br>diagram<span>.</span></h2>
+        </div>
+        <div class="about-copy">
+          <p class="about-lead">
+            I’m Hafþór, a mechatronics engineer who likes owning the whole path from an idea to a working machine.
+          </p>
+          <p>
+            My professional work has centered on electronics and embedded hardware that must survive outside the lab.
+            My M.Sc. thesis added mechanism design, real-time control, instrumentation and physics modelling to that mix.
+            The home builds are where the habit started and where I still test unfamiliar ideas quickly.
+          </p>
+          <p>
+            I’m based in Reykjavík and relocating to Amsterdam. I’m most useful in teams that design, build, test and improve
+            real hardware rather than stopping at the drawing.
+          </p>
+          <div class="capabilities" aria-label="Core capabilities">
+            <span>PCB design</span><span>Embedded C/C++</span><span>Python</span><span>Fusion 360</span><span>3D printing</span><span>Control systems</span><span>Instrumentation</span><span>Field commissioning</span>
+          </div>
+          <div class="about-links">
+            <a class="primary-link dark" href="Hafthor-Arni-Hermannsson-CV.pdf" target="_blank">View CV <span aria-hidden="true">↗</span></a>
+            <a class="text-link dark" href="mailto:arnihafthor@gmail.com">Email me</a>
           </div>
         </div>
       </section>
-      <footer>
-        <div>
-          <span>Hafþór Árni Hermannsson</span>
-          <span>Mechatronics engineer</span>
-        </div>
-        <a href="#top">Back to top ↑</a>
-        <span>Reykjavík, Iceland</span>
-      </footer>
     </main>
-    <script src="script.js" defer="defer"></script>
+
+    <footer>
+      <div class="footer-name"><strong>Hafþór Árni Hermannsson</strong><span>Mechatronics engineer</span></div>
+      <nav aria-label="Social links">
+        <a href="https://github.com/HafthorArni" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/haf%C3%BE%C3%B3r-22356726b/" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a href="https://www.tiktok.com/@hafthor.arni" target="_blank" rel="noreferrer">TikTok</a>
+        <a href="https://www.instagram.com/hafthor.arni/?hl=en" target="_blank" rel="noreferrer">Instagram</a>
+      </nav>
+      <a class="back-to-top" href="#top">Back to top ↑</a>
+    </footer>
+
+    <script src="script.js" defer></script>
   </body>
 </html>

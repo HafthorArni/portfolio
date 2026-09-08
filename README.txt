@@ -1,78 +1,102 @@
-HAFÞÓR ÁRNI HERMANNSSON — SIMPLE EDITABLE PORTFOLIO
-=====================================================
+HAFÞÓR ÁRNI HERMANNSSON - EDITABLE PORTFOLIO
+==============================================
 
-This version has no React, Vinext, ChatGPT authentication, database files,
-package manager, build process or generated framework code.
+This is a simple static website. It does not need React, a database or a package
+manager. The site contains:
 
-It contains only:
-
-    index.html       Text, project sections, image order and captions
-    styles.css       Layout, colors, tile sizes and image cropping
-    script.js        Fullscreen image viewer
-    projects/        All project images, GIFs and the earthquake animation
-    favicon.svg      Browser icon
-    local-server.py  Tiny no-cache local web server
-    start-local.bat  Windows launcher
+    index.html       Page text, section order, image order and captions
+    styles.css       Visual design, responsive layout and image sizing
+    script.js        Automatic numbering and the fullscreen media viewer
+    projects/        Project photographs, GIFs and video
+    Hafthor-Arni-Hermannsson-CV.pdf
+    favicon.svg
 
 
 RUNNING THE WEBSITE
+-------------------
 
-1. Double-click start-local.bat.
+1. Double-click start-local.bat on Windows.
 2. The portfolio opens in your browser.
-3. Leave the terminal window open.
-4. Save any changes and refresh the browser tab.
+3. Leave the terminal window open while viewing the site.
+4. Save changes and refresh the browser.
 5. Press Ctrl+C in the terminal to stop the server.
 
 
-EDITING TEXT, CAPTIONS, PICTURES AND ORDER
+PAGE ORGANIZATION
+-----------------
+
+The work is grouped by what each project demonstrates:
+
+    01  Professional hardware
+    02  Wave-energy thesis
+    03  Celestial machines
+    04  Motion + interfaces
+    05  Robots + wireless
+    06  Machines + tools
+    07  Physical experiments
+
+Each section begins with a short case-study summary and four facts. Related
+photos are then arranged in one or more labeled gallery groups. The old "More
+from the bench" section was removed; its items now sit in the relevant sections.
+
+
+EDITING TEXT, CAPTIONS, IMAGES AND ORDER
+----------------------------------------
 
 Open index.html in a text editor such as Visual Studio Code.
 
-To change the main heading, search for:
+Each gallery item is an ordinary button containing an image, for example:
 
-    <h1>I make<br>stuff.</h1>
-
-Each gallery picture is an ordinary block like this:
-
-    <button class="gallery-card wide" aria-label="Open Mechanical design">
+    <button class="gallery-card wide"
+            data-kind="CAD"
+            data-detail="Optional extra text shown in the fullscreen viewer."
+            aria-label="Open mechanical design">
       <img src="projects/startracker-cad-png.webp"
-           alt="CAD model of the star tracker"
+           alt="CAD model of the star-tracking mount"
            loading="lazy">
-      <span class="image-index">02.02</span>
+      <span class="image-index"></span>
       <span class="image-caption">Mechanical design</span>
     </button>
 
-Change the filename after src= to replace the image. Put new image files in
-the projects folder. Move the entire button block to reorder a picture, or
-delete the block to remove it.
+Change the filename after src= to replace an image. Put new image files in the
+projects folder. Move the whole button to reorder it or delete the button to
+remove it. Numbering and each section's media count are updated automatically.
 
-GIF animations use the same <img> blocks as ordinary pictures. They animate
-automatically and open in the fullscreen viewer when clicked.
+The data-kind label is the small colored label at the top right of the image.
+The data-detail text is shown only in the fullscreen viewer. If it is omitted,
+the image's alt text is used as the description.
+
+
+EDITING THE GRID
+----------------
 
 Available tile classes are:
 
-    gallery-card standard
-    gallery-card wide
-    gallery-card tall
-    gallery-card feature
+    gallery-card             small landscape tile
+    gallery-card wide        wide landscape tile
+    gallery-card tall        portrait tile
+    gallery-card feature     large featured tile
+    gallery-card full        full-width tile
 
+The grid uses dense placement, so cards fill the earliest available space and
+leave fewer empty gaps. The desktop gallery width is controlled by this variable
+near the top of styles.css:
 
-EDITING THE LAYOUT OR CROPPING
+    --gallery: 960px;
 
-Open styles.css.
+Reduce that number to tighten the viewing area. Image cropping is controlled by:
 
-The main gallery layout is under .project-grid.
-Tile sizes are under .gallery-card, .wide, .tall and .feature.
-The desktop chapter width is controlled by max-width: 1100px.
-Image cropping is controlled by:
-
-    .gallery-card img, .gallery-card video {
+    .gallery-card img,
+    .gallery-card video {
       object-fit: cover;
     }
 
-"cover" fills a tile and crops its edges. "contain" shows the whole picture.
+"cover" fills a tile and crops its edges. "contain" shows the full media but may
+leave blank space around it.
 
 
 HOSTING ONLINE
+--------------
 
-Upload the contents of this folder to the root of any static web host.
+Upload the contents of this folder to the root of any static web host. The site
+also works with GitHub Pages.
