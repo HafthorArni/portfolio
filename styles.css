@@ -480,6 +480,16 @@ footer nav a,
   align-items: end;
 }
 
+.project-title-row--stacked {
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.project-title-row--stacked p {
+  width: min(100%, 32rem);
+  justify-self: end;
+}
+
 .project-title-row h2 {
   margin: 0;
   font-size: clamp(4rem, 8.3vw, 7.8rem);
@@ -995,6 +1005,11 @@ footer nav a,
 
   .project-title-row p {
     max-width: 42rem;
+  }
+
+  .project-title-row--stacked p {
+    width: auto;
+    justify-self: stretch;
   }
 
   .project-facts {
